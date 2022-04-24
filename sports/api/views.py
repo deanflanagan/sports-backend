@@ -1,9 +1,5 @@
 from django.http import JsonResponse
 
-
-# def home(request):
-#     return JsonResponse({"home":"should return table with list of available games & leagues"})
-
 def get_game(request, match_id):
     return JsonResponse({"match_id": match_id})
 
